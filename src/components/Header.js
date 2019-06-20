@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-const Header=()=>{
+const Header=(props)=>{
     return(
-        <h2>TODO_APP</h2>
+        <h2>{props.title}</h2>
     )
 }
 export default Header;
