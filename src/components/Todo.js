@@ -8,7 +8,11 @@ class Todo extends Component{
     }
     handleChange=e=>{
         this.setState({newTodo:e.target.value})
-        console.log(e.target.value,"valueee")
+       
+    }
+    handleSubmit=(e)=>{
+e.preventDefault()
+console.log(this.state.newTodo)
     }
     render(){
         return(
@@ -18,7 +22,7 @@ class Todo extends Component{
             <ul>  
         {this.state.todoItems.map(items=> <TodoItems individualItem = {items}/>)}
              </ul>
-             <form>
+             <form onSubmit={this.handleSubmit}>
                  <label htmlfor="">Todo Items</label><br/>
                  <input type="text" name="todo-items" 
                  onChange={this.handleChange} 
