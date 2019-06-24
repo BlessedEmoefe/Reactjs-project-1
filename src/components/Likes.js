@@ -24,7 +24,7 @@ return{
     render(){
         return(
             <div>
-                {this.props.}
+                {/* {this.props.name} */}
                 <h1>Welcome to my Likes Apps</h1>
                 <h3>Likes:{this.state.likes}</h3>
                 <button onClick={this.increaseLikes}>Like</button>
