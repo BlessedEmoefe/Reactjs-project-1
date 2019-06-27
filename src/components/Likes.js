@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Header from "./Header"
 
 class Likes extends Component{
     state = {
@@ -13,19 +14,21 @@ class Likes extends Component{
     }
     decreaseLikes=()=>{
         this.setState((prevState)=>{
-return{
-    likes:prevState.likes -1
-}
+            return{
+                likes:prevState.likes -1
+            }
         })
     }
     resetLikes=()=>{
+        
         this.setState({likes : 0})
     }
     render(){
+        // const name= this.props.name
         return(
             <div>
-                {/* {this.props.name} */}
                 <h1>Welcome to my Likes Apps</h1>
+                <h3><Header title="This is my Likes header"/></h3>
                 <h3>Likes:{this.state.likes}</h3>
                 <button onClick={this.increaseLikes}>Like</button>
                 <button onClick={this.decreaseLikes}>Unlike</button>

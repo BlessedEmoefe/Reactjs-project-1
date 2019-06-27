@@ -12,11 +12,18 @@ class Todo extends Component{
     }
     handleSubmit=(e)=>{
 e.preventDefault()
-console.log(this.state.newTodo)
+this.setState(()=>{
+   let todoItems = this.state.todoItems.concat(this.state.newTodo)
+    return{
+       todoItems,
+       newTodo:""
+    }
+})
+console.log(this.state.todoItems)
     }
     render(){
         return(
-            <div><Header name="This is my likes Section" title="My Todo Title" />
+            <div><Header title="My Todo Title" />
             <h1>Welcome to my todo App</h1>
             <TodoItems />
             <ul>  
