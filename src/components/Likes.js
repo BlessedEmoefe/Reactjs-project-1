@@ -27,8 +27,8 @@ class Likes extends Component{
         // const name= this.props.name
         return(
             <div>
-                <h1>Welcome to my Likes Apps</h1>
-                <h3><Header title="This is my Likes header"/></h3>
+                <Header title="This is my Likes header"/>
+                <h3>Welcome to my Likes Apps</h3>
                 <h3>Likes:{this.state.likes}</h3>
                 <button onClick={this.increaseLikes}>Like</button>
                 <button onClick={this.decreaseLikes}>Unlike</button>

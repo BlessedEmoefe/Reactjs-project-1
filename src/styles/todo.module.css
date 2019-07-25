@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif,Helvetica,Arial;
+   
+}
+.title{
+    text-align: center;
+    background-image: url("../components/todoImage2.jpg");
+    background-attachment: fixed;
+    /* background: #e1e1e1; */
+    padding:50px;
+    margin-bottom: 30px;
+    color:white;
+    transition: 1s;
+}
+.title:hover{
+    opacity: 0.85;
+    color:#b30000;
+    animation-fill-mode: backwards;
+
+    
+    
+}
+.container{
+
+}
+.wrapper{
+    margin:0 auto;
+    width:60%;
+    margin-top:30px;
+    text-align: center;
+
+}
+.forms input{
+font-family: Roboto,sans-serif;
+background: #f2f2f2;
+width:99%;
+border:0.1px solid #cccccc;
+margin:0 0 15px;
+padding:15px;
+border-radius:6px;
+box-sizing: border-box;
+outline: 1;
+color:black;
+text-align: center;
+}
+
+.forms button{
+    text-transform: uppercase;
+    background: #0F084B;
+    width:100%;
+    border:0px;
+    padding:15px;
+    color:white;
+    cursor: pointer;
+}
+.removeAllButton{
+    margin-top: 10px;
+    font-family:  Roboto,sans-serif;
+    text-transform: uppercase;
+    background:#0F084B ;
+    width:216px;
+    border:0;
+    color:#ffff;
+    cursor: pointer;
+    float: right;
+    padding: 15px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+    
+}
+.forms button:hover{
+    opacity: 0.9
+}
+.removeAllButton:hover{
+color:red;
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+
+}

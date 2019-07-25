@@ -1,4 +1,5 @@
 import React, { Component} from "react"
+import Header from "../components/Header"
 
 class LocalStorage extends Component{
     render(){
@@ -16,6 +17,7 @@ class LocalStorage extends Component{
 
         return(
             <div>
+                <Header title="this is my LocalStorage Header"/>
             <h2>hello, the stringified version is  </h2>
             <p>{getPerson}</p>
             
